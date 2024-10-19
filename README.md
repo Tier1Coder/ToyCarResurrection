@@ -2,6 +2,10 @@
 
 <img src="https://github.com/user-attachments/assets/194fac32-0589-42b1-b1a3-c5b778d73b8e" alt="used_car_photo" width="800"/>
 
+
+https://github.com/user-attachments/assets/986a6f3c-07e8-4f80-9b9f-aac13f7bc6ba
+
+
 ## Introduction
 
 **Samofajnochodzik** is a Bluetooth-controlled toy car project built by repurposing and modifying a discarded remote-controlled car. The goal was to create a technically precise, efficient, and fully functional car that can be controlled via a dedicated mobile application on Android devices. Instead of replacing batteries, the car can be conveniently charged from a standard wall socket. This project focuses on mechanical construction, electronics, and programming using an Arduino Uno and the C language.
