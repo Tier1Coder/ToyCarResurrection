@@ -1,5 +1,7 @@
 # Samofajnochodzik
 
+<img src="https://github.com/user-attachments/assets/194fac32-0589-42b1-b1a3-c5b778d73b8e" alt="used_car_photo" width="800"/>
+
 ## Introduction
 
 **Samofajnochodzik** is a Bluetooth-controlled toy car project built by repurposing and modifying a discarded remote-controlled car. The goal was to create a technically precise, efficient, and fully functional car that can be controlled via a dedicated mobile application on Android devices. Instead of replacing batteries, the car can be conveniently charged from a standard wall socket. This project focuses on mechanical construction, electronics, and programming using an Arduino Uno and the C language.
@@ -75,19 +77,33 @@ The system comprises several key components:
 ### 1. Power Supply and Regulation
 
 - **Battery Setup**: Uses three 18650 Li-Ion batteries connected in series, providing up to 12.6 V when fully charged.
+<img src="https://github.com/user-attachments/assets/90a74abf-fafa-4c10-9fe6-096a0c130cd2" alt="18650_3s_pcb" width="400"/>
+
 - **Battery Management System**: A BMS 3S module with a balancer ensures safe charging and discharging.
+<img src="https://github.com/user-attachments/assets/a2d26ef7-f683-4d6b-8258-293d9973d625" alt="bms_scheme" width="400"/>
+
 - **Voltage Regulation**: The 12.6 V is stepped down to 7.5 V using an LM2596 converter to power the control board and Arduino.
+<img src="https://github.com/user-attachments/assets/d2a8364e-e759-4494-b0fd-8b2ab011245b" alt="lm2596-module-copy-640x307" width="400"/>
+
 - **Arduino Power**: The Arduino Uno is powered directly from the 7.5 V output.
 
 ### 2. Control System
 
-- **Original Control Board Modification**: Slightly modified to interface with the Arduino via the relay module.
+- **Original Control Board Modification**: Slightly modified to interface with the Arduino via the relay module (RX-2B).
+<img src="https://github.com/user-attachments/assets/0d6d5f83-961c-4c59-b66d-794e396bf91d" alt="original_car_rx-2b_scheme" width="400"/>
+  
 - **Relay Module**: A 4-channel relay module simulates button presses by shorting appropriate pins, controlling movement.
+<img src="https://github.com/Tier1Coder/ToyCarResurrection/blob/main/photos/4c_relay.jpg" alt="4c_relay" width="400"/>
+  
 - **Arduino Uno**: Receives commands from the Bluetooth module and controls the relay module accordingly.
 
 ### 3. Communication
 
+<img src="https://github.com/user-attachments/assets/f4c7bd6c-dd34-43f9-b4d5-155133e3f243" alt="debug_ble_connection_photo" width="400"/>
+
 - **Bluetooth Module (XM-15B)**: Connected to the Arduino's RX and TX pins for wireless communication.
+<img src="https://github.com/user-attachments/assets/2f48b2ee-1514-4d2d-b4c8-12f204b87fa8" alt="xm-15b_connected_to_arduino_cross_scheme" width="400"/>
+
 - **Mobile Application**: The "Arduino Car" app on an Android phone sends control commands via Bluetooth.
 
 ### 4. Operation
@@ -127,6 +143,8 @@ The Arduino code handles incoming serial data from the Bluetooth module and acti
 - **Combination Commands**: Special combinations handle simultaneous button presses.
 
 ## Testing
+
+<img src="https://github.com/user-attachments/assets/eed19b9c-d7b4-48b2-be0f-6dbdd1329956" alt="testing_ble_connection" width="400"/>
 
 Extensive testing was conducted:
 
